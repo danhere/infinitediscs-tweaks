@@ -7,13 +7,12 @@
 }
 
 .modal-content .media-body {
-	display: flex;
-	flex-flow: row wrap;
+	background: #fffc;
 	display: none;
+	flex-flow: row wrap;
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: #fffc;
 	height: 100%;
 	padding: 8px;
 	width: 100%;
