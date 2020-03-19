@@ -1,0 +1,62 @@
+.modal-dialog {
+  width: 70vw;
+}
+
+.modal-content .pre-scrollable {
+  max-height: 70vh;
+}
+
+.modal-content .media-body {
+	display: flex;
+	flex-flow: row wrap;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fffc;
+	height: 100%;
+	padding: 8px;
+}
+
+.modal-content .list-group {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.modal-content .media-body p {
+	width: 100%;	
+}
+
+.modal-content .media-body .form-control {
+	width: 70px !important;
+}
+
+.modal-content .media-body .form-group + p {
+	padding-left: 8px;
+	width: auto;
+}
+
+.modal-content .list-group-item:hover .media-body {
+	display: flex;
+}
+
+.modal-content .media-body .media-heading {
+	margin-top: 0;
+}
+
+.modal-content .zoom-load {
+	display: none;
+}
+
+.modal-content .zoomImg {
+	opacity: 1 !important;
+	position: static !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: auto !important;
+}
+
+.modal-content a.pull-left {
+	width: 100%;
+}
