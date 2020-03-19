@@ -1,11 +1,14 @@
+/* Increase the width of the modal */
 .modal-dialog {
  	width: 70vw;
 }
 
+/* Increase the height of the modal */
 .modal-content .pre-scrollable {
 	max-height: 70vh;
 }
 
+/* Hide the purchasing and name until hover */
 .modal-content .media-body {
 	background: #fffc;
 	display: none;
@@ -18,36 +21,44 @@
 	width: 100%;
 }
 
+/* Show all the products in a grid layout */
 .modal-content .list-group {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 }
 
+/* Make the paragraph be full width for flexing */
 .modal-content .media-body p {
 	width: 100%;	
 }
 
+/* Set a fixed with for the number selector */
 .modal-content .media-body .form-control {
 	width: 70px !important;
 }
 
+/* Set the last p containing the cart button to sit next to the input */
 .modal-content .media-body .form-group + p {
 	padding-left: 8px;
 	width: auto;
 }
 
+/* Set the product card to flex */
 .modal-content .list-group-item:hover .media-body {
 	display: flex;
 }
 
+/* Remove margin from the title of the product */
 .modal-content .media-body .media-heading {
 	margin-top: 0;
 }
 
+/* Hide the little image */
 .modal-content .zoom-load {
 	display: none;
 }
 
+/* Show the big image */
 .modal-content .zoomImg {
 	opacity: 1 !important;
 	position: static !important;
@@ -57,6 +68,7 @@
 	height: auto !important;
 }
 
+/* Make the link full width */
 .modal-content a.pull-left {
 	width: 100%;
 }
