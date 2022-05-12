@@ -1,11 +1,11 @@
 /* Increase the width of the modal */
 .modal-dialog {
- 	width: 70vw;
+ 	width: 96vw;
 }
 
 /* Increase the height of the modal */
 .modal-content .pre-scrollable {
-	max-height: 70vh;
+	max-height: 75vh;
 }
 
 /* Hide the purchasing and name until hover */
@@ -24,7 +24,7 @@
 /* Show all the products in a grid layout */
 .modal-content .list-group {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 }
 
 /* Make the paragraph be full width for flexing */
@@ -70,5 +70,79 @@
 
 /* Make the link full width */
 .modal-content a.pull-left {
+	width: 100%;
+}
+
+/* NEW DISC LISTING! */
+
+/* Hide most of the junk in the Newly Added Discs listing */
+#tbl_new_discs .media-body > p {
+	display: none;
+}
+
+/* Hide stupid Details button */
+#tbl_new_discs .list-group-item .media-body > p:last-child > button:last-child {
+	display: none;
+}
+
+/* On hover, show the add to cart buttons */
+#tbl_new_discs .list-group-item:hover .media-body > p:last-child {
+	display: flex;
+	justify-content: center;
+	opacity: 1;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+} 
+
+/* Show the Add to Cart button, BABY! */
+#tbl_new_discs .media-body:hover > p:last-child > .btn-new-added {
+	display: block;
+}
+
+/* Make the disc name display off left, smol */
+#tbl_new_discs .media-body .media-heading {
+	background: rgba(255,255,255, .75);
+	display: block;
+	padding: 4px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 10px;
+}
+
+/* Hide the disc name on hover */
+#tbl_new_discs .list-group-item:hover .media-body .media-heading {
+	opacity: 0;
+}
+
+/* Hide the rest of the junk */
+#tbl_new_discs .media-body .media-heading .label-primary {
+	display: none;
+}
+
+/* Remove extra margin in panel */
+#tbl_new_discs .media .pull-left {
+	margin-right: 0;
+}
+
+/* Make margin even */
+#tbl_new_discs .list-group {
+	margin-bottom: 4px;
+}
+
+/* grid bby */
+#tbl_new_discs tbody {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	position: relative;
+}
+
+/* Center and make the pagination nice bobby */
+#tbl_new_discs + .row > .col-sm-6 {
+	display: flex;
+	justify-content: center;
 	width: 100%;
 }
